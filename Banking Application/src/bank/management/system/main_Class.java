@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -89,7 +88,9 @@ public class main_Class extends JFrame implements ActionListener {
            new Deposit(pin);
             setVisible(false);
         }else if (e.getSource()==logout){
-            System.exit(0);
+            new Login();
+            setVisible(false);
+            //System.exit(0);
         } else if (e.getSource()==withdraw) {
             new Withdrawl(pin);
             setVisible(false);
